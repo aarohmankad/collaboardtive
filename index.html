@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collaboardtive</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src='js/firebase.js'></script>
+</head>
+<body>
+	<div id="wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<img src="img/logo.png" alt="" class="logo">
+				</div>
+				<div class="col-lg-8">
+					<input type="text" class="form-control" placeholder="Join or Create a Room" id="room_input">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 canvas_container">
+					<canvas id="whiteboard" width="800" height="600"></canvas>
+				</div>
+			</div>
+		</div>
+		<div id="push"></div>
+	</div>
+	<div id="footer">
+		<div class="container">
+			<div class="row controls">
+				<div class="col-lg-2 col-lg-offset-1">
+					<img src="img/blackMarker.png" class="tools" data-color="000">
+				</div>
+				<div class="col-lg-2">
+					<img src="img/redMarker.png" class="tools" data-color="f00">
+				</div>
+				<div class="col-lg-2">
+					<img src="img/greenMarker.png" class="tools" data-color="0f0">
+				</div>
+				<div class="col-lg-2">
+					<img src="img/blueMarker.png" class="tools" data-color="00f">
+				</div>
+				<div class="col-lg-2">
+					<img src="img/eraser.png" class="tools" data-color="fff">
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="js/app.js"></script>
+</body>
+</html>

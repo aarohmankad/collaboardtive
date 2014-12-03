@@ -1,0 +1,58 @@
+html, body 
+{
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -135px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 135px; 
+}
+
+.logo
+{
+  display: block;
+  margin: 0 auto; 
+  padding: 20px;
+}
+
+#room_input
+{
+  margin: 25px;
+}
+
+#whiteboard
+{
+  border: 1px solid black;
+  display: block;
+  margin: 0 auto;
+}
+
+.controls
+{
+  .col-lg-2
+  {
+
+    &:first-child
+    {
+      border-left: 1px solid black;
+    }
+    border-right: 1px solid black;
+
+    img
+    {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
